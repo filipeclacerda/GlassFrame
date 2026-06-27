@@ -1,6 +1,12 @@
-# GlassFrame
+<p align="center">
+  <img src="./logo.png" width="128" height="128" alt="GlassFrame Logo" />
+</p>
+
+<h1 align="center">GlassFrame</h1>
 
 **GlassFrame** is an elegant, minimal, and highly interactive photo frame skin for [Rainmeter](https://www.rainmeter.net/). It allows you to showcase up to 4 of your favorite images on your Windows desktop in various geometric layouts, complete with real-time scaling and a stylized configuration panel.
+
+![GlassFrame Demo](./demo.gif)
 
 ---
 
