@@ -2,82 +2,77 @@
   <img src="./logo.png" width="128" height="128" alt="GlassFrame Logo" />
 </p>
 
-<h1 align="center">GlassFrame</h1>
+<h1 align="center">GlassFrame 2.0</h1>
 
-**GlassFrame** is an elegant, minimal, and highly interactive photo frame skin for [Rainmeter](https://www.rainmeter.net/). It allows you to showcase up to 4 of your favorite images on your Windows desktop in various geometric layouts, complete with real-time scaling and a stylized configuration panel.
+Uma moldura de fotos discreta para Rainmeter, com slideshow por pasta, cinco layouts e configuração bilíngue.
+A quiet Rainmeter photo frame with folder slideshow, five layouts, and bilingual settings.
 
 ![GlassFrame Demo](./demo.gif)
 
----
+## Português
 
-## 🚀 Features
+### Recursos
 
-- **5 Layout Modes:**
-  - **Mode 1 (Single):** Displays a single image filling the entire widget.
-  - **Mode 2 (Dual vertical split):** Displays two images side-by-side (50% width each).
-  - **Mode 3 (Triple vertical split):** Displays three images side-by-side (33.3% width each).
-  - **Mode 4 (Grid 2x2):** Displays four images arranged in a clean grid.
-  - **Mode 5 (Circle):** An elegant circular crop focused on the first image, ideal for portraits or avatars.
-- **Dynamic Scroll Scaling:** Instantly scale the entire skin on-the-fly (from `0.4x` to `3.0x`) by simply scrolling your mouse wheel (`Scroll Up` / `Scroll Down`) over the widget's background.
-- **Instant Control Panel:** A slide-in-place control panel appears instantly when you hover your mouse over the widget, letting you switch layouts or launch settings.
-- **Dedicated Settings GUI:** A stylized native Windows Forms interface powered by PowerShell that lets you:
-  - Select images for all 4 slots using a file picker.
-  - Choose a custom **Background Color** via a standard Windows color palette.
-  - Adjust background opacity (transparency level) using a slider.
-  - Apply changes in real-time or close the settings window using separate, dedicated buttons.
-- **Premium Aesthetics:** Featuring soft rounded corners, modern semi-transparent panels, and glassmorphism elements that match Windows 11 design guidelines.
+- Slideshow de uma pasta, com ordem aleatória sem repetição ou ordem por nome.
+- Troca simultânea de 1–4 imagens conforme o layout.
+- Modo manual compatível com quatro imagens fixas.
+- Cinco layouts: foto única, duas colunas, três colunas, grade 2×2 e retrato circular.
+- Controles rápidos para anterior, pausa, próxima, layout e configurações.
+- Escala de `0.4×` a `3.0×` usando a roda do mouse quando os controles estão ocultos.
+- Persistência de pasta, intervalo, layout, escala, idioma e aparência.
+- Interface em português e inglês, detectada inicialmente pelo idioma do Windows.
 
----
+### Instalação e uso
 
-## 📁 File Structure
+1. Copie esta pasta para `Documents\Rainmeter\Skins\GlassFrame`.
+2. Atualize as skins no gerenciador do Rainmeter e carregue `GlassFrame.ini`.
+3. Passe o mouse sobre a moldura e abra **Configurações**.
+4. Escolha uma pasta ou ative o modo de quatro imagens manuais.
+5. Clique em **Aplicar**. Fechar ou cancelar não grava o rascunho.
 
-The project has a modular, lightweight structure:
+Formatos aceitos: PNG, JPG/JPEG, BMP, GIF e WebP, respeitando o suporte da versão instalada do Rainmeter.
 
-- **[GlassFrame.ini](./GlassFrame.ini):** The primary Rainmeter skin file. Declares visual elements (meters), shape container clipping masks, and scaling math.
-- **[Variables.inc](./Variables.inc):** Stores persistent user configurations, including chosen image file paths, background colors, and transparency values.
-- **[Settings.ps1](./Settings.ps1):** A PowerShell WinForms script that renders the graphical settings GUI.
-- **[SelectImage.ps1](./SelectImage.ps1):** A helper PowerShell utility to open the file selection dialog asynchronously.
-- **[Layout.lua](./Layout.lua):** A Lua script reserved for advanced dynamic layout management and future expansions.
+Se a pasta for movida, ficar inacessível ou não contiver imagens compatíveis, a moldura mostrará um estado vazio. Abra as configurações e atualize o catálogo depois de adicionar ou remover arquivos.
 
----
+## English
 
-## 🛠️ Requirements
+### Features
+
+- Folder slideshow with random-without-repeats or filename order.
+- Simultaneous sets of 1–4 images according to the selected layout.
+- Backward-compatible manual mode with four fixed image paths.
+- Five layouts: single, two columns, three columns, 2×2 grid, and circular portrait.
+- Quick controls for previous, pause, next, layout, and settings.
+- `0.4×`–`3.0×` mouse-wheel scaling while controls are hidden.
+- Persistent folder, interval, layout, scale, language, and appearance.
+- Portuguese and English settings, initially selected from the Windows UI language.
+
+### Install and use
+
+1. Copy this folder to `Documents\Rainmeter\Skins\GlassFrame`.
+2. Refresh skins in Rainmeter Manager and load `GlassFrame.ini`.
+3. Hover over the frame and open **Settings**.
+4. Choose a folder or enable the four-image manual mode.
+5. Select **Apply**. Closing or cancelling does not save the draft.
+
+Supported formats: PNG, JPG/JPEG, BMP, GIF, and WebP, subject to the installed Rainmeter version.
+
+If the folder is moved, inaccessible, or contains no compatible files, the frame displays an empty state. Open settings and refresh the catalog after adding or removing files.
+
+## Arquitetura / Architecture
+
+- `GlassFrame.ini`: meters and interaction declarations.
+- `Layout.lua`: layouts, slideshow queue, history, persistence, and UI state.
+- `Settings.ps1`: transactional Windows settings interface.
+- `IndexImages.ps1`: UTF-8 image catalog generator.
+- `Variables.inc`: persistent user preferences.
+
+## Requisitos / Requirements
 
 - Windows 10 or Windows 11
-- [Rainmeter](https://www.rainmeter.net/) (v4.5 or newer recommended)
-- PowerShell 5.1 or newer (pre-installed with Windows)
+- Rainmeter 4.5 or newer
+- Windows PowerShell 5.1 or newer
 
----
+## License
 
-## ⚙️ Installation & Usage
-
-1. Copy the `GlassFrame` folder into your Rainmeter skins directory:
-   ```txt
-   C:\Users\<YourUsername>\Documents\Rainmeter\Skins\GlassFrame
-   ```
-2. Open the Rainmeter Manager and click **"Refresh all"** in the bottom left corner.
-3. Locate `GlassFrame` in the list, select `GlassFrame.ini`, and click **"Load"**.
-4. **Accessing Controls:** Hover over the loaded widget and click the hamburger menu button (☰) in the top-right corner to reveal the control panel.
-5. **Configuring:** Click the **"Configurar"** button on the control panel to open the settings window to load your own pictures and choose custom colors.
-6. **Resizing:** Hover over the background of the skin and use your mouse scroll wheel to zoom the widget in or out.
-
----
-
-## 💡 Troubleshooting
-
-### The Settings GUI doesn't open
-By default, Windows may restrict running PowerShell scripts. Although the skin executes the settings script bypassing local policies for safety (`-ExecutionPolicy Bypass`), antivirus software or system-wide domain policies may still block it.
-
-To resolve this:
-1. Open PowerShell as Administrator.
-2. Run the following command:
-   ```powershell
-   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-   ```
-3. Type `Y` (or `S` in Portuguese) and press `Enter` to confirm.
-
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT). Feel free to modify, customize, and redistribute!
+[MIT](./LICENSE)

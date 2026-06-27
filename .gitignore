@@ -6,6 +6,8 @@ Desktop.ini
 # Rainmeter & skin runtime logs
 error.log
 *.log
+ImageCatalog.txt
+*.tmp
 
 # Temp files
 *.tmp
