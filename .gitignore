@@ -1,0 +1,12 @@
+# Windows thumbnails
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Rainmeter & skin runtime logs
+error.log
+*.log
+
+# Temp files
+*.tmp
+*~
