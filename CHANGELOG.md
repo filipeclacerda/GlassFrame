@@ -4,6 +4,27 @@ Todas as mudanças relevantes do GlassFrame serão documentadas neste arquivo.
 
 O formato segue o [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o projeto utiliza [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [2.1.0] - 2026-06-28
+
+### Adicionado
+
+- Opacidade ajustável de aproximadamente `2%` a `100%`, permitindo um fundo quase totalmente transparente sem desaparecer por completo.
+
+### Alterado
+
+- A barra de controles agora flutua sobre a parte inferior das imagens e não ocupa espaço permanente no widget.
+- O fluxo da janela de configurações foi simplificado para um único botão **Aplicar e fechar**.
+- A engrenagem de configurações passou a ser desenhada como uma forma vetorial do Rainmeter, sem depender de glifos Unicode.
+
+### Corrigido
+
+- Redimensionamento do widget pela roda do mouse quando os controles estão visíveis.
+- Salvamento e atualização automática da skin ao aplicar as configurações.
+- Abertura da janela de configurações por meio do plugin RunCommand.
+- Codificação de textos acentuados nos tooltips e na interface.
+- Ícones exibidos incorretamente por incompatibilidade de fonte ou codificação.
+- Espaço vazio abaixo das imagens causado pela antiga posição da barra de controles.
+
 ## [2.0.0] - 2026-06-27
 
 ### Adicionado
