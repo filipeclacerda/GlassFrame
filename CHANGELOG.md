@@ -17,6 +17,7 @@ O formato segue o [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e 
 - Indexador PowerShell para criar um catálogo UTF-8 de imagens.
 - Configurações bilíngues em português e inglês, com detecção inicial do idioma do Windows.
 - Persistência de pasta, imagens, intervalo, ordem, pausa, idioma, layout, escala, cor e transparência.
+- Opacidade configurável de aproximadamente `2%` a `100%`.
 - Botão para restaurar as configurações padrão.
 
 ### Alterado

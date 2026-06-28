@@ -255,7 +255,6 @@ function CycleMode()
 end
 
 function AdjustScale(delta)
-  if controlsVisible then return end
   scale = math.floor(math.max(0.4, math.min(3.0, scale + tonumber(delta))) * 10 + 0.5) / 10
   persist('Scale', string.format('%.1f', scale))
   applyLayout()

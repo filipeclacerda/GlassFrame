@@ -194,8 +194,8 @@ function Show-Settings {
     $opacityLabel.Text=$script:T.Opacity; $opacityLabel.Location=New-Object System.Drawing.Point(14,77)
     $opacityLabel.Size=New-Object System.Drawing.Size(130,22)
     $opacityTrack=New-Object System.Windows.Forms.TrackBar
-    $opacityTrack.Minimum=20; $opacityTrack.Maximum=255; $opacityTrack.TickStyle='None'
-    $opacityTrack.Value=[Math]::Max(20,[Math]::Min(255,[int]$config.BgAlpha))
+    $opacityTrack.Minimum=5; $opacityTrack.Maximum=255; $opacityTrack.TickStyle='None'
+    $opacityTrack.Value=[Math]::Max(5,[Math]::Min(255,[int]$config.BgAlpha))
     $opacityTrack.Location=New-Object System.Drawing.Point(150,69); $opacityTrack.Size=New-Object System.Drawing.Size(402,40)
     $lookGroup.Controls.AddRange(@($layoutLabel,$layoutCombo,$colorLabel,$colorButton,$opacityLabel,$opacityTrack))
 

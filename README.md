@@ -18,8 +18,9 @@ A quiet Rainmeter photo frame with folder slideshow, five layouts, and bilingual
 - Modo manual compatível com quatro imagens fixas.
 - Cinco layouts: foto única, duas colunas, três colunas, grade 2×2 e retrato circular.
 - Controles rápidos para anterior, pausa, próxima, layout e configurações.
-- Escala de `0.4×` a `3.0×` usando a roda do mouse quando os controles estão ocultos.
+- Escala de `0.4×` a `3.0×` usando a roda do mouse sobre o widget.
 - Persistência de pasta, intervalo, layout, escala, idioma e aparência.
+- Opacidade ajustável de aproximadamente 2% a 100%.
 - Interface em português e inglês, detectada inicialmente pelo idioma do Windows.
 
 ### Instalação e uso
@@ -43,8 +44,9 @@ Se a pasta for movida, ficar inacessível ou não contiver imagens compatíveis,
 - Backward-compatible manual mode with four fixed image paths.
 - Five layouts: single, two columns, three columns, 2×2 grid, and circular portrait.
 - Quick controls for previous, pause, next, layout, and settings.
-- `0.4×`–`3.0×` mouse-wheel scaling while controls are hidden.
+- `0.4×`–`3.0×` mouse-wheel scaling while hovering the widget.
 - Persistent folder, interval, layout, scale, language, and appearance.
+- Adjustable opacity from approximately 2% to 100%.
 - Portuguese and English settings, initially selected from the Windows UI language.
 
 ### Install and use
